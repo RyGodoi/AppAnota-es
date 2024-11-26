@@ -16,9 +16,9 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.app.RyAnotacoes",
+      "versionCode": 1,
       "adaptiveIcon": {
-        "package": "com.app.RyAnotacoes",
-        "versionCode": 1,
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
