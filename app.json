@@ -17,12 +17,20 @@
     },
     "android": {
       "adaptiveIcon": {
+        "package": "com.app.RyAnotacoes",
+        "versionCode": 1,
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ryangodoi.RyAnotacoes"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5a956b9d-24b7-44de-aa77-2d4d277b9665"
+      }
     }
   }
 }
