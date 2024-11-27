@@ -59,3 +59,6 @@ O aplicativo é organizado da seguinte forma:
 
  📋 Licença
 Este projeto está sob a licença MIT. Sinta-se à vontade para usá-lo e modificá-lo como desejar.
+
+link para donwload:
+https://drive.google.com/file/d/1drjA-ettsGZlok880Wej7t1bJvBMwrIR/view?usp=drive_link
