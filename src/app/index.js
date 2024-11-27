@@ -100,7 +100,8 @@ export default function App() {
 
 
     return (
-        <View style={{ marginTop: StatusBar.currentHeight, flex: 1 }}>
+        <View style={{ flex: 1 }}>
+            <StatusBar backgroundColor={'#0066c1'} barStyle={'light-content'}></StatusBar>
             <View style={style.header}>
                 <Text style={style.textHeader}>Anotações</Text>
                 <View style={style.headerContent}>
@@ -169,7 +170,7 @@ export default function App() {
             )}
             {editandoIndex == null && podeApagar == null && modalApagarTudo == null && (
                 <View style={style.caixaEntrada}>
-                    <Text style={{ textAlign: 'center', fontSize: 15, color: '#adadad' }}>Adicionar uma nova anotação</Text>
+                    <Text style={{ textAlign: 'center', fontSize: 15, color: 'white', fontWeight: 'bold', marginBottom: 5 }}>Adicionar uma nova anotação</Text>
                     <View style={style.container}>
                         <TextInput
                             multiline
@@ -179,7 +180,7 @@ export default function App() {
                             onChangeText={setanotar}
                         />
                         <TouchableOpacity style={style.enviar} onPress={funciona}>
-                            <FontAwesome name="arrow-circle-right" size={40} color="#0066c1" />
+                            <FontAwesome name="arrow-circle-right" size={40} color="white" />
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -193,6 +194,7 @@ const style = StyleSheet.create({
     header: {
         backgroundColor: '#0066c1',
         padding: 15,
+        marginTop: 0,
     },
     textHeader: {
         color: 'white',
@@ -201,25 +203,26 @@ const style = StyleSheet.create({
         fontWeight: 'bold',
     },
     container: {
-        marginHorizontal: 20,
+        marginHorizontal: 10,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
     },
     textInput: {
         borderRadius: 15,
-        borderWidth: 2,
-        borderColor: '#0066c1',
+        borderWidth: 3,
+        borderColor: '#1383e7',
         backgroundColor: '#fff',
         flex: 1,
         marginRight: 0,
-        paddingHorizontal: 10,
+        paddingVertical: 10,
+        paddingHorizontal: 15,
         marginBottom: 5,
     },
     caixaEntrada: {
-        backgroundColor: 'white',
-        borderColor: '#0066c1',
-        borderTopWidth: 1,
+        backgroundColor: '#0066c1',
+        borderColor: '#1383e7',
+        borderTopWidth: 5,
         position: 'absolute',
         left: 0,
         right: 0,

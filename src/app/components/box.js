@@ -17,8 +17,8 @@ export default function Box(props) {
                     </TouchableOpacity>
                 </View>
                 <View style={{ justifyContent: 'center', alignItems: 'flex-end', flex: 1 }}>
-                    <Text style={{ fontSize: 10 }}>{props.diaMes}</Text>
-                    <Text style={{ fontSize: 18 }}>{props.horaMinuto}</Text>
+                    <Text style={{ fontSize: 10, color: '#0066c1' }}>{props.diaMes}</Text>
+                    <Text style={{ fontSize: 18, color: '#0066c1' }}>{props.horaMinuto}</Text>
                 </View>
             </View>
         </View >
@@ -28,10 +28,11 @@ export default function Box(props) {
 const style = StyleSheet.create({
     container: {
         backgroundColor: '#c2def6',
-        padding: 5,
+        paddingTop: 10,
+        paddingHorizontal: 10,
         margin: 10,
         borderWidth: 1,
-        borderColor: '#eaeaea',
+        borderColor: '#1383e7',
         borderRadius: 20
     },
     texto: {
@@ -43,7 +44,7 @@ const style = StyleSheet.create({
         flex: 1,
         padding: 10,
         borderWidth: 1,
-        borderColor: '#0066c1',
+        borderColor: '#1383e7',
         borderRadius: 10
     },
     textoBox2: {
